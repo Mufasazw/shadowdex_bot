@@ -1,0 +1,165 @@
+# 🛣️ ShadowDEX Bot — Project Roadmap
+
+Welcome to the official roadmap of **ShadowDEX Bot**, a Telegram-based interface for decentralized finance (DeFi) utilities, token tracking, and eventually trading integration.
+
+---
+
+## 🚀 Project Overview
+
+**ShadowDEX Bot** is a Telegram bot designed to make DeFi tools more accessible and actionable from within Telegram. It will evolve from simple wallet/token tracking into a powerful assistant that integrates token data, alerts, swap interfaces, and more.
+
+> 🌐 Goal: Simplify access to DeFi tools for everyday users through an intuitive Telegram experience.
+
+---
+
+## 📅 Project Phases & Milestones
+
+### ✅ Phase 1: Foundation (COMPLETE)
+Establish the bot core and database infrastructure.
+
+- [x] Setup Python Telegram Bot framework
+- [x] Integrate PostgreSQL via SQLAlchemy
+- [x] `.env` config management
+- [x] `/start` command + user onboarding
+- [x] Save Telegram user ID, username, and timestamp
+- [x] Test PostgreSQL connection
+
+---
+
+### 🔁 Phase 2: Core Command System (IN PROGRESS)
+
+Build and polish user-facing commands and database functionality.
+
+#### 🧾 Basic Commands
+- [x] `/start` – Welcome message + DB insert
+- [ ] `/help` – List all available commands and descriptions
+- [ ] `/about` – Short mission/vision + how the bot works
+- [ ] `/stats` – Total users, token searches, and usage
+
+#### 🔍 Token Tools
+- [ ] `/search <token>` – Fetch live token data (DEX screener / CoinGecko)
+- [ ] `/track <token>` – Save token to user’s watchlist
+- [ ] `/untrack <token>` – Remove from watchlist
+- [ ] `/watchlist` – Show all tracked tokens
+- [ ] `/price <token>` – Current price lookup
+- [ ] `/chart <token>` – Chart image via API
+
+#### 🛎️ Alerts
+- [ ] `/alert <token> <price>` – Price alert system
+- [ ] Notifications when conditions are met
+
+#### 🧑‍💼 User Profile
+- [ ] `/profile` – Show user profile info (tracked tokens, preferences, etc.)
+
+---
+
+### 🔄 Phase 3: APIs & Data Layer
+
+Integrate external APIs for dynamic, real-time token data.
+
+- [ ] CoinGecko API (fallback for general info)
+- [ ] DexScreener or DexTools for real-time data
+- [ ] GraphQL support (if using The Graph)
+- [ ] Internal cache system to reduce API hits
+
+---
+
+### 🎛️ Phase 4: UI/UX Improvements
+
+Make the bot more interactive and easier to use.
+
+- [ ] Telegram **inline buttons** for watchlist actions
+- [ ] Telegram **keyboard menus**
+- [ ] Inline queries (e.g., `@ShadowDEXBot <token>` for results)
+- [ ] Message editing and cleaner output formatting
+
+---
+
+### ⚙️ Phase 5: On-Chain Integration
+
+Enable basic wallet and on-chain utilities.
+
+- [ ] Wallet tracking (via address submission)
+- [ ] Show portfolio value
+- [ ] Show on-chain token transfers
+- [ ] ENS / name service support
+
+---
+
+### 🔄 Phase 6: Decentralized Trading Features
+
+Position ShadowDEX as a DEX interface via Telegram.
+
+- [ ] Connect to Uniswap/Sushiswap APIs
+- [ ] Read liquidity pool data
+- [ ] Simple swap execution via wallet signing (via web popup)
+- [ ] Gas tracking and fee estimation
+- [ ] “Best price” routing (aggregators)
+
+---
+
+### 🧠 Phase 7: Smart AI Assistant (Stretch Goal)
+
+Integrate an AI assistant to help users with:
+
+- [ ] Token research summaries
+- [ ] Scam token detection
+- [ ] “What is this token?” Q&A
+- [ ] Portfolio optimization suggestions
+
+---
+
+### 🌍 Phase 8: Scaling, Multi-language, and Community
+
+Expand the reach and robustness of the bot.
+
+- [ ] Add support for multiple languages
+- [ ] Community voting or governance features
+- [ ] Admin dashboard to manage bot stats
+- [ ] Airdrop tool for project launches
+
+---
+
+## 🧪 Experimental Ideas (Backlog)
+These are not confirmed, but open to future exploration.
+
+- Telegram group monitoring for token mentions
+- Trading competitions or leaderboard
+- Carbon credit token integration (if CeeKay or Legacy Vanguard integrates)
+
+---
+
+## 🛠 Tech Stack
+
+- **Backend:** Python 3.11, SQLAlchemy, PostgreSQL
+- **Bot Framework:** [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
+- **Hosting (future):** Railway, Render, or self-hosted VPS
+- **Data APIs:** CoinGecko, DexScreener, Etherscan, The Graph (optional)
+
+---
+
+## 📌 Progress Reporting
+
+Current development is tracked via:
+
+- Google Sheets Log: _[Link your sheet here]_  
+- GitHub commits & issues  
+- Manual milestones in this roadmap  
+
+---
+
+## 💡 Contribution Guide
+
+This is a solo or closed project for now, but if you're interested in contributing:
+
+1. Clone the repo.
+2. Follow setup instructions in `README.md`
+3. Work on issues or propose features via pull request.
+4. Contact: [Mufasazw on GitHub](https://github.com/Mufasazw)
+
+---
+
+## 🧭 Final Thoughts
+
+ShadowDEX Bot is still in early development. This roadmap will evolve as new ideas emerge and community needs become clearer. The goal is to build **the most user-friendly, lightweight DEX gateway** that runs where users already are — **Telegram**.
+
