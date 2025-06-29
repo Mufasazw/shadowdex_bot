@@ -14,3 +14,6 @@ ShadowDEX is a Telegram-based crypto trading bot and aggregator that integrates 
    ```bash
    git clone https://github.com/Mufasazw/shadowdex_bot.git
    cd shadowdex_bot
+
+
+Google sheet progress report updated by Kudzai Chabvuta: https://docs.google.com/spreadsheets/d/1aBOn3cdWD7HqEp1oy-vMCaYuZraCAfgD/edit?usp=sharing&ouid=103860471818529164564&rtpof=true&sd=true
