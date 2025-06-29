@@ -1,0 +1,34 @@
+# ShadowDEX – Telegram P2P Crypto Trading Bot + DEX Aggregator
+
+## Project Vision:
+ShadowDEX is a decentralized crypto trading assistant built as a Telegram bot. It will support:
+
+1. **Peer-to-Peer Crypto Trades** – with escrow-like logic, integrated with local payment gateways.
+2. **Trading Bot Module** – for executing signals and automated trades (on CEX or DEX).
+3. **DEX Aggregator** – real-time pricing and routing from DEXs like Uniswap, PancakeSwap.
+
+## Current Stack
+- Python (3.11.9)
+- Telegram Bot API (`python-telegram-bot`)
+- PostgreSQL (via SQLAlchemy ORM)
+- `.env` secrets loaded with `python-dotenv`
+- VS Code for dev environment
+
+## Completed So Far
+- Telegram bot running at `@ShadowDEXBot`
+- `/start` command functional
+- Project scaffold:
+shadowdex_bot/
+├── venv/
+├── src/
+│ ├── main.py ← bot entry point
+│ ├── .env ← contains BOT_TOKEN
+
+## Next Milestones
+1. Add `/register` + `/help` commands
+2. PostgreSQL DB schema for users/trades/sessions
+3. P2P trade post/accept/verify flows
+4. Integration with trading strategies & aggregator
+
+## GitHub Repo
+[https://github.com/Mufasazw/shadowdex_bot](https://github.com/Mufasazw/shadowdex_bot)
