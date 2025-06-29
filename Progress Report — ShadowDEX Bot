@@ -1,0 +1,43 @@
+**Date:** 2025-06-29
+**Author:** Kudzai Chabvuta
+
+## Overview
+
+This report summarizes the current development status of the ShadowDEX Telegram bot project.
+
+## Completed Tasks
+
+* **Project Setup:**
+
+  * Initialized Python virtual environment and installed dependencies.
+  * Configured environment variables using `.env` for secure token and database URL management.
+
+* **Database Integration:**
+
+  * Set up PostgreSQL database connection with SQLAlchemy ORM.
+  * Created `User` model to store Telegram user data (`telegram_id`, `username`, `created_at`).
+  * Verified successful connection and basic CRUD operations with the database.
+
+* **Telegram Bot Core:**
+
+  * Developed and tested the `/start` command to register new users and welcome returning users.
+  * Handled cases where users may have no Telegram username gracefully.
+  * Implemented basic error handling for database operations within command functions.
+
+* **Code Structure:**
+
+  * Modularized code into `main.py`, `db.py`, and `models.py` for clarity and maintainability.
+  * Utilized environment variables for sensitive information.
+
+## Next Steps
+
+* Fully implement and test additional bot commands as planned.
+* Consider enhancing user interaction with inline buttons and menus after core functionality is stable.
+* Integrate token and market data APIs for real-time information retrieval.
+* Improve error handling and logging for better monitoring.
+
+## Notes
+
+* Database credentials and bot tokens are managed securely via `.env` file.
+* The project is currently in an early MVP phase focused on user registration and basic interaction.
+
